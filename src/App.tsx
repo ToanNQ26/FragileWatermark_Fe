@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Lossless from "./pages/Lossless";
 import Lossy from "./pages/Lossy";
-import Base64ToImage from "./pages/Base64toImage";
+import Base64ToImage from "./pages/Base64ToImage";
 
 function App() {
   return (
