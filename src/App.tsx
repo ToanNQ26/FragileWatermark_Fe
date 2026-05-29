@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Lossless from "./pages/Lossless";
 import Lossy from "./pages/Lossy";
 import Base64ToImage from "./pages/Base64ToImage";
+import BlockDct from "./pages/BlockDct";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/base64-to-image" element={<Base64ToImage />} />
         <Route path="/lossless" element={<Lossless />} />
         <Route path="/lossy" element={<Lossy />} />
+        <Route path="/block-dct" element={<BlockDct />} />
       </Routes>
   );
 }
