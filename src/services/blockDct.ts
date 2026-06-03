@@ -33,7 +33,7 @@ export async function embedDctBlock(params: {
   formData.append("file", params.file);
   formData.append("key", params.key);
 
-  const response = await fetch(`${API_BASE_URL}/embed-dct`, {
+  const response = await fetch(`${API_BASE_URL}/block/embed-dct`, {
     method: "POST",
     body: formData,
   });
@@ -49,7 +49,7 @@ export async function tamperDctBlock(params: {
   formData.append("file", params.file);
   formData.append("region", params.region);
 
-  const response = await fetch(`${API_BASE_URL}/tamper-dct`, {
+  const response = await fetch(`${API_BASE_URL}/block/tamper-dct`, {
     method: "POST",
     body: formData,
   });
@@ -65,7 +65,7 @@ export async function verifyDctBlock(params: {
   formData.append("file", params.file);
   formData.append("key", params.key);
 
-  const response = await fetch(`${API_BASE_URL}/verify-dct`, {
+  const response = await fetch(`${API_BASE_URL}/block/verify-dct`, {
     method: "POST",
     body: formData,
   });
